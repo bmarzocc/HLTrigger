@@ -62,16 +62,22 @@ class HLTEcalPhiSymFilter : public edm::EDFilter {
 
  edm::EDGetTokenT<EBDigiCollection> barrelDigisToken_;
  edm::EDGetTokenT<EEDigiCollection> endcapDigisToken_;
+ edm::EDGetTokenT<EcalUncalibratedRecHitCollection> barrelUncalibHitsToken_;
+ edm::EDGetTokenT<EcalUncalibratedRecHitCollection> endcapUncalibHitsToken_;
  edm::EDGetTokenT<EBRecHitCollection> barrelHitsToken_;
  edm::EDGetTokenT<EERecHitCollection> endcapHitsToken_;
  edm::InputTag barrelDigis_;
  edm::InputTag endcapDigis_;
+ edm::InputTag barrelUncalibHits_;
+ edm::InputTag endcapUncalibHits_;
  edm::InputTag barrelHits_;
  edm::InputTag endcapHits_;
  std::string phiSymBarrelDigis_;
  std::string phiSymEndcapDigis_;
  std::string phiSymBarrelHits_;
  std::string phiSymEndcapHits_;
+ double ampCutADC_barl_;
+ double ampCutADC_endc_;
  double eCut_barl_;
  double eCut_endc_;  
  double eCut_barl_high_;
