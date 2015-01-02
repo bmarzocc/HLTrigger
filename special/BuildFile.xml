@@ -49,4 +49,3 @@
 <use   name="SimGeneral/HepPDTRecord"/>
 <use   name="TrackingTools/TransientTrack"/>
 
-<flags   EDM_PLUGIN="1"/>
